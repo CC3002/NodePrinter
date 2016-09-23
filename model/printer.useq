@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.11" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="com.c3002.node.console.Printer" project="nodeprinter-preparation" 
+    file="/nodeprinter-preparation/src/main/java/com/c3002/node/console/Printer.java" binary="false" label="printer" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="107" y="0"/>    
+    <execution id="2">      
+      <position height="492" width="124" x="5" y="78"/>    
+    </execution>    
+    <execution id="5">      
+      <position height="385" width="7" x="64" y="143"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="251" width="7" x="67" y="235"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="7" x="70" y="340"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="21" width="7" x="70" y="423"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="com.c3002.node.Node" project="nodeprinter-preparation" 
+    file="/nodeprinter-preparation/src/main/java/com/c3002/node/Node.java" binary="false" label="node" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="215" y="0"/>    
+    <execution id="4">      
+      <position height="450" width="85" x="133" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="com.c3002.node.Node" project="nodeprinter-preparation" 
+    file="/nodeprinter-preparation/src/main/java/com/c3002/node/Node.java" binary="false" label="node1" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="347" y="0"/>    
+    <execution id="7">      
+      <position height="321" width="85" x="222" y="186"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="com.c3002.node.Leaf" project="nodeprinter-preparation" 
+    file="/nodeprinter-preparation/src/main/java/com/c3002/node/Leaf.java" binary="false" label="leaf" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="417" y="0"/>    
+    <execution id="10">      
+      <position height="92" width="85" x="311" y="290"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="com.c3002.node.Node" project="nodeprinter-preparation" 
+    file="/nodeprinter-preparation/src/main/java/com/c3002/node/Node.java" binary="false" label="node2" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="506" y="0"/>    
+    <execution id="12">      
+      <position height="66" width="85" x="400" y="399"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="accept(com.c3002.node.console.Printer,java.lang.StringBuffer,int):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="accept(com.c3002.node.console.Printer,java.lang.StringBuffer,int):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="accept(com.c3002.node.console.Printer,java.lang.StringBuffer,int):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="accept(com.c3002.node.console.Printer,java.lang.StringBuffer,int):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="16" operation="visitNode(com.c3002.node.INode,java.lang.StringBuffer,int):void" asynchronous="false" 
+    x="84" y="124">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </message>  
+  <message id="18" operation="visitNode(com.c3002.node.INode,java.lang.StringBuffer,int):void" asynchronous="false" 
+    x="85" y="214">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="20" operation="visitLeaf(com.c3002.node.ILeaf,java.lang.StringBuffer,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="22" operation="visitNode(com.c3002.node.INode,java.lang.StringBuffer,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>
+</sequence-diagram>
