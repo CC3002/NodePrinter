@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+<class-diagram version="1.1.11" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
   <interface id="1" language="java" name="com.c3002.node.IBasicNode" project="nodeprinter-preparation" 
     file="/nodeprinter-preparation/src/main/java/com/c3002/node/IBasicNode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="314" y="109"/>    
+    <position height="-1" width="-1" x="283" y="99"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </interface>  
   <interface id="2" language="java" name="com.c3002.node.ILeaf" project="nodeprinter-preparation" 
     file="/nodeprinter-preparation/src/main/java/com/c3002/node/ILeaf.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="445" y="258"/>    
+    <position height="-1" width="-1" x="442" y="238"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </interface>  
   <interface id="3" language="java" name="com.c3002.node.INode" project="nodeprinter-preparation" 
     file="/nodeprinter-preparation/src/main/java/com/c3002/node/INode.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="136" y="276"/>    
+    <position height="-1" width="-1" x="127" y="281"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </interface>  
   <class id="4" language="java" name="com.c3002.node.Leaf" project="nodeprinter-preparation" 
     file="/nodeprinter-preparation/src/main/java/com/c3002/node/Leaf.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="469" y="480"/>    
+    <position height="-1" width="-1" x="447" y="503"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="com.c3002.node.Node" project="nodeprinter-preparation" 
     file="/nodeprinter-preparation/src/main/java/com/c3002/node/Node.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="209" y="496"/>    
+    <position height="-1" width="-1" x="194" y="499"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,38 +49,43 @@
   <class id="6" language="java" name="com.c3002.node.console.Printer" project="nodeprinter-preparation" 
     file="/nodeprinter-preparation/src/main/java/com/c3002/node/console/Printer.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="778" y="515"/>    
+    <position height="-1" width="-1" x="706" y="153"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="7">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <generalization id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
-  <association id="8">    
+  <association id="10">    
+    <bendpoint x="293" y="312"/>    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="9" name="nodes"/>      
-      <multiplicity id="10" minimum="0" maximum="2147483647"/>    
+      <attribute id="11" name="nodes">        
+        <position height="0" width="0" x="-31" y="-10"/>      
+      </attribute>      
+      <multiplicity id="12" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-31" y="-10"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="12">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
   <realization id="13">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
   </realization>  
-  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
     <operations public="true" package="true" protected="true" private="true" static="true"/>  
